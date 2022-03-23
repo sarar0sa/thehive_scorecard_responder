@@ -1,0 +1,34 @@
+{
+    "name": "ScorecardSubmit",
+    "version": "1.0",
+    "author": "Sara Rosander",
+    "url": "https://github.com/TheHive-Project/",
+    "license": "AGPL-V3",
+    "description": "Resolve issue from Security ScoreCard",
+    "dataTypeList": ["thehive:case", "thehive:case_task", "thehiva:case_artifact"],
+    "command": "Scorecard/scorecard.py",
+    "baseConfig": "Scorecard",
+    "configurationItems": [
+        {
+            "name": "api_key",
+            "description": "API key",
+            "type": "string",
+            "multi": false,
+            "required": true
+        },
+        {
+            "name": "base_uri",
+            "description": "Base uri",
+            "type": "string",
+            "multi": false,
+            "required": true
+        },
+        {
+            "name": "reason",
+            "description": "Reason to closing the issue",
+            "type": "string",
+            "multi": false,
+            "required": true
+        }
+    ]
+}
